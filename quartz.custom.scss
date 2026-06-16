@@ -1,0 +1,26 @@
+@use "./base.scss";
+
+// ── 커스텀 스타일 (CI 빌드 시 quartz/styles/custom.scss 로 복사됨) ──
+
+// 탐색기(Explorer) 글 목록 간격 넓히기 — 항목이 빽빽해서 구분 어려운 문제 해소
+.explorer-content {
+  // 글(파일) 링크: 위아래 여백으로 행 높이 확보
+  & ul li > a {
+    display: inline-block;
+    padding: 0.2rem 0;
+    line-height: 1.3;
+  }
+
+  // 항목(폴더/글) 사이 세로 간격
+  & ul > li {
+    margin: 0.15rem 0;
+  }
+}
+
+// 폴더(카테고리) 라벨 행도 약간 여유
+.folder-container {
+  & div > a,
+  & div > button span {
+    line-height: 1.8rem;
+  }
+}

@@ -49,9 +49,11 @@ jobs:
             --exclude='.github' \
             --exclude='node_modules' \
             --exclude='quartz.config.ts' \
+            --exclude='quartz.custom.scss' \
             --exclude='README.md' \
             blog/ quartz/content/
           cp blog/quartz.config.ts quartz/quartz.config.ts
+          cp blog/quartz.custom.scss quartz/quartz/styles/custom.scss
 
       - name: Setup Node
         uses: actions/setup-node@v4
