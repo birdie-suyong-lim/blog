@@ -1,1 +1,6 @@
 .DS_Store
+
+# Quartz 빌드 산출물 (로컬에서 빌드할 경우 — 보통은 CI에서만 빌드)
+public/
+.quartz-cache/
+node_modules/

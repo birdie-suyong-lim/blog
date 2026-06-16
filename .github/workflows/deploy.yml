@@ -1,0 +1,83 @@
+name: Deploy blog (Quartz) to GitHub Pages
+
+# 이 레포는 순수 마크다운만 보관합니다(=Obsidian 볼트 깨끗하게 유지).
+# Quartz 프레임워크는 빌드 시점에 이 워크플로우가 가져와서, 글을 끼워 넣고
+# 정적 사이트로 빌드한 뒤 GitHub Pages에 배포합니다. 로컬엔 아무것도 설치하지 않습니다.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+# Quartz 버전 핀 (v4 브랜치의 특정 커밋) — 업스트림 변경에 흔들리지 않게 고정
+env:
+  QUARTZ_REPO: jackyzha0/quartz
+  QUARTZ_REF: d25a6eabf96751ffca56f8a8139272def7a65041
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout content (this repo)
+        uses: actions/checkout@v4
+        with:
+          path: blog
+          fetch-depth: 0 # git 기반 날짜용 전체 히스토리
+
+      - name: Checkout Quartz (pinned)
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.QUARTZ_REPO }}
+          ref: ${{ env.QUARTZ_REF }}
+          path: quartz
+
+      - name: Inject content + config into Quartz
+        run: |
+          rm -rf quartz/content
+          mkdir quartz/content
+          rsync -a \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='node_modules' \
+            --exclude='quartz.config.ts' \
+            --exclude='README.md' \
+            blog/ quartz/content/
+          cp blog/quartz.config.ts quartz/quartz.config.ts
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: quartz
+
+      - name: Build Quartz
+        run: npx quartz build
+        working-directory: quartz
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: quartz/public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
