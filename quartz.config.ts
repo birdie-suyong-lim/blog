@@ -10,7 +10,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "수용의 블로그",
+    pageTitle: "일단, AI",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
