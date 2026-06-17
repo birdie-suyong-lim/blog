@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     analytics: null,
     locale: "ko-KR",
     baseUrl: "birdie-suyong-lim.github.io/blog",
-    ignorePatterns: ["private", "templates", ".obsidian", "README.md", "**/인스타-카드-프롬프트*"],
+    ignorePatterns: ["private", "templates", ".obsidian", "README.md", "CLAUDE.md", "**/CLAUDE.md", "**/인스타-카드-프롬프트*"],
     defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
