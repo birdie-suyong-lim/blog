@@ -15,6 +15,18 @@ const explorerSortFn = (a: any, b: any) => {
   return !a.isFolder && b.isFolder ? 1 : -1
 }
 
+// 네비게이션 표시명 가공:
+// 평탄 구조라 part 묶음이 안 보이므로, 파일명 `partN-M.` 접두어에서 `pN-M`을 뽑아
+// 네비에 보이는 제목 앞에만 붙인다(예: "p0-1 클로드코드가 뭔가요?").
+// 페이지 본문 제목(H1)은 frontmatter title 그대로라 영향 없음.
+const explorerMapFn = (node: any) => {
+  if (node.isFolder) return
+  const m = (node.slugSegment ?? "").match(/^part(\d+)-(\d+)\./)
+  if (m) {
+    node.displayName = `p${m[1]}-${m[2]} ${node.displayName}`
+  }
+}
+
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
@@ -52,7 +64,7 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer({ sortFn: explorerSortFn }),
+    Component.Explorer({ sortFn: explorerSortFn, mapFn: explorerMapFn }),
   ],
   right: [
     Component.Graph(),
@@ -76,7 +88,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer({ sortFn: explorerSortFn }),
+    Component.Explorer({ sortFn: explorerSortFn, mapFn: explorerMapFn }),
   ],
   right: [],
 }
