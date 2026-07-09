@@ -46,3 +46,4 @@
 ## iOS
 
 - [fastlane로-앱버전이-안바뀌는-문제](iOS/1.fastlane%EB%A1%9C-%EC%95%B1%EB%B2%84%EC%A0%84%EC%9D%B4-%EC%95%88%EB%B0%94%EB%80%8C%EB%8A%94-%EB%AC%B8%EC%A0%9C.md)
+- [Swift-Concurrency-단계별-적용](iOS/2.Swift-Concurrency-%EB%8B%A8%EA%B3%84%EB%B3%84-%EC%A0%81%EC%9A%A9.md)
