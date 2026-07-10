@@ -29,6 +29,7 @@
 - [세력-따라잡기](%EA%B2%BD%EC%A0%9C/8.%EC%84%B8%EB%A0%A5-%EB%94%B0%EB%9D%BC%EC%9E%A1%EA%B8%B0.md)
 - [원달러-환율-급등-정부대응-시나리오](%EA%B2%BD%EC%A0%9C/9.%EC%9B%90%EB%8B%AC%EB%9F%AC-%ED%99%98%EC%9C%A8-%EA%B8%89%EB%93%B1-%EC%A0%95%EB%B6%80%EB%8C%80%EC%9D%91-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4.md)
 - [종가베팅-방법론](%EA%B2%BD%EC%A0%9C/10.%EC%A2%85%EA%B0%80%EB%B2%A0%ED%8C%85-%EB%B0%A9%EB%B2%95%EB%A1%A0.md)
+- [개인수급-외국인이탈-위기신호](%EA%B2%BD%EC%A0%9C/11.%EA%B0%9C%EC%9D%B8%EC%88%98%EA%B8%89-%EC%99%B8%EA%B5%AD%EC%9D%B8%EC%9D%B4%ED%83%88-%EC%9C%84%EA%B8%B0%EC%8B%A0%ED%98%B8.md)
 
 ## 골프
 
@@ -48,3 +49,4 @@
 
 - [fastlane로-앱버전이-안바뀌는-문제](iOS/1.fastlane%EB%A1%9C-%EC%95%B1%EB%B2%84%EC%A0%84%EC%9D%B4-%EC%95%88%EB%B0%94%EB%80%8C%EB%8A%94-%EB%AC%B8%EC%A0%9C.md)
 - [Swift-Concurrency-단계별-적용](iOS/2.Swift-Concurrency-%EB%8B%A8%EA%B3%84%EB%B3%84-%EC%A0%81%EC%9A%A9.md)
+- [async-await-전환-리뷰-흔한-질문들](iOS/3.async-await-%EC%A0%84%ED%99%98-%EB%A6%AC%EB%B7%B0-%ED%9D%94%ED%95%9C-%EC%A7%88%EB%AC%B8%EB%93%A4.md)
