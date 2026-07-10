@@ -15,6 +15,7 @@
 - [점진적인-AI활용-전환-전략](AI/9.%EC%A0%90%EC%A7%84%EC%A0%81%EC%9D%B8-AI%ED%99%9C%EC%9A%A9-%EC%A0%84%ED%99%98-%EC%A0%84%EB%9E%B5.md)
 - [클로드코드와-figma-mcp-연동](AI/10.%ED%81%B4%EB%A1%9C%EB%93%9C%EC%BD%94%EB%93%9C%EC%99%80-figma-mcp-%EC%97%B0%EB%8F%99.md)
 - [프롬프트-깎는-에이전트](AI/11.%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EA%B9%8E%EB%8A%94-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8.md)
+- [일의-패러다임-전환](AI/12.%EC%9D%BC%EC%9D%98-%ED%8C%A8%EB%9F%AC%EB%8B%A4%EC%9E%84-%EC%A0%84%ED%99%98.md)
 
 ## 경제
 
