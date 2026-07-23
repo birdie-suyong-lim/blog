@@ -51,6 +51,7 @@
 ## 리빙
 
 - [초파리-날파리-없애는-팁](%EB%A6%AC%EB%B9%99/1.%EC%B4%88%ED%8C%8C%EB%A6%AC-%EB%82%A0%ED%8C%8C%EB%A6%AC-%EC%97%86%EC%95%A0%EB%8A%94-%ED%8C%81.md)
+- [쥐젖이-생기는-이유-제거하는-방법](%EB%A6%AC%EB%B9%99/2.%EC%A5%90%EC%A0%96%EC%9D%B4-%EC%83%9D%EA%B8%B0%EB%8A%94-%EC%9D%B4%EC%9C%A0-%EC%A0%9C%EA%B1%B0%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95.md)
 
 ## iOS
 
