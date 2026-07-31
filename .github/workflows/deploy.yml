@@ -28,13 +28,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout content (this repo)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           path: blog
           fetch-depth: 0 # git 기반 날짜용 전체 히스토리
 
       - name: Checkout Quartz (pinned)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: ${{ env.QUARTZ_REPO }}
           ref: ${{ env.QUARTZ_REF }}
@@ -58,7 +58,7 @@ jobs:
           cp blog/quartz.custom.scss quartz/quartz/styles/custom.scss
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 22
 
@@ -71,7 +71,7 @@ jobs:
         working-directory: quartz
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: quartz/public
 
