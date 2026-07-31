@@ -52,6 +52,7 @@
 - [fastlane로-앱버전이-안바뀌는-문제](iOS/1.fastlane%EB%A1%9C-%EC%95%B1%EB%B2%84%EC%A0%84%EC%9D%B4-%EC%95%88%EB%B0%94%EB%80%8C%EB%8A%94-%EB%AC%B8%EC%A0%9C.md)
 - [Swift-Concurrency-단계별-적용](iOS/2.Swift-Concurrency-%EB%8B%A8%EA%B3%84%EB%B3%84-%EC%A0%81%EC%9A%A9.md)
 - [async-await-전환-리뷰-흔한-질문들](iOS/3.async-await-%EC%A0%84%ED%99%98-%EB%A6%AC%EB%B7%B0-%ED%9D%94%ED%95%9C-%EC%A7%88%EB%AC%B8%EB%93%A4.md)
+- [한국-기업-DUNS-조회가-안되는-이유](iOS/4.%ED%95%9C%EA%B5%AD-%EA%B8%B0%EC%97%85-DUNS-%EC%A1%B0%ED%9A%8C%EA%B0%80-%EC%95%88%EB%90%98%EB%8A%94-%EC%9D%B4%EC%9C%A0.md)
 
 ## SQLD 준비
 
