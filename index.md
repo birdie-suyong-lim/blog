@@ -3,7 +3,7 @@ title: "일단, AI"
 ---
 
 <div class="home-hero">
-  <span class="kicker">AI · 경제 · 골프 · 개발 — 아카이브 82편</span>
+  <span class="kicker">AI · 경제 · 골프 · 개발 · 이야기 — 아카이브 107편</span>
   <h2>공부한 것을<br>끝까지 정리한다</h2>
   <p>읽고 끝내지 않기 위해 씁니다. 금리 전달경로부터 클로드코드 워크플로우까지, 스스로 다시 찾아볼 수 있는 형태로 남긴 기록.</p>
 </div>
@@ -15,6 +15,7 @@ title: "일단, AI"
   <a href="골프/"><strong>골프<span class="count">7</span></strong><span class="desc">스윙 역학을 물리로 읽기</span></a>
   <a href="iOS/"><strong>iOS<span class="count">4</span></strong><span class="desc">Swift Concurrency, 배포 트러블슈팅</span></a>
   <a href="리빙/"><strong>리빙<span class="count">4</span></strong><span class="desc">생활의 공학적 결론</span></a>
+  <a href="이야기-북유럽신화/"><strong>북유럽 신화<span class="count">25</span></strong><span class="desc">끝을 알고 사는 신들의 이야기</span></a>
 </div>
 
 <div class="course-banner">
